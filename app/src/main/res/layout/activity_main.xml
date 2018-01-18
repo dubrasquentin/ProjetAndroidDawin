@@ -30,11 +30,11 @@
                 android:weightSum="1">
 
                 <ImageButton
-                    android:id="@+id/imageButton13"
+                    android:id="@+id/imgGrenouille"
                     android:layout_width="205dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.04"
-                    android:scaleType="centerCrop"
+                    android:scaleType="centerInside"
                     app:srcCompat="@drawable/image3" />
             </LinearLayout>
 
@@ -44,10 +44,10 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton12"
+                    android:id="@+id/imgTiger"
                     android:layout_width="213dp"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
+                    android:scaleType="centerInside"
                     app:srcCompat="@drawable/image2" />
             </LinearLayout>
 
@@ -58,10 +58,10 @@
                 android:weightSum="1">
 
                 <ImageButton
-                    android:id="@+id/imageButton11"
+                    android:id="@+id/imgLoutre"
                     android:layout_width="210dp"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
+                    android:scaleType="centerInside"
                     app:srcCompat="@drawable/image1" />
             </LinearLayout>
 

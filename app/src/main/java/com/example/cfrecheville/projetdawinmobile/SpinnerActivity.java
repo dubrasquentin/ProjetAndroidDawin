@@ -8,9 +8,9 @@ import android.widget.Spinner;
  * Created by cfrecheville on 12/01/18.
  */
 
-public class SpinnerActivity extends MainActivity implements AdapterView.OnItemSelectedListener {
+//public class SpinnerActivity extends MainActivity implements AdapterView.OnItemSelectedListener {
 
-    public void onItemSelected(AdapterView<?> parent View v, int pos, long id){
+  /*  public void onItemSelected(AdapterView<?> parent View v, int pos, long id){
         parent.getItemAtPosition(pos);
     }
 
@@ -18,6 +18,6 @@ public class SpinnerActivity extends MainActivity implements AdapterView.OnItemS
         // Another interface callback
     }
 
-    Spinner spinner = (Spinner) findViewById(R.id.spinner);
-    spinner.setOnItemSelectedListener(this);
-}
+   // Spinner spinner = (Spinner) findViewById(R.id.spinner);
+    spinner.setOnItemSelectedListener(this); */
+//}
