@@ -12,7 +12,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int choice;
+    private String choice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
         ib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choice = 1;
+                choice = "1";
             }
         });
 
         ib2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choice = 2;
+                choice = "2";
             }
         });
 
         ib3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choice = 3;
+                choice = "3";
             }
         });
 
@@ -51,14 +51,17 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         tailleImg.setAdapter(adapter);
 
+
         final Button Active = (Button) findViewById(R.id.Active);
         Active.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
+
                 Intent intent = new Intent(MainActivity.this, GameActivity.class);
                 intent.putExtra("choice", choice);
-                intent.putExtra("tailleimg", tailleImg.toString());
+                intent.putExtra("tailleimg", tailleImg.getSelectedItem().toString());
                 startActivity(intent);
             }
         });
